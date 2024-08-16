@@ -6,7 +6,6 @@ import Footer from "../Footer";
 import CartProduct from "@/app/components/CardProduct";
 import { LoginForm } from "@/app/components/LoginForm";
 import YukForm from "@/app/components/SingUpForm";
-import TestingCard from "@/app/components/TestingCard";
 
 const mockProducts = [
   {
@@ -63,10 +62,6 @@ const Doc = () => {
       <div>
         <h1>Sign UP Form</h1>
         <YukForm />
-      </div>
-      <div>
-        <h1>My Card Testing</h1>
-        <TestingCard />
       </div>
     </div>
   );
