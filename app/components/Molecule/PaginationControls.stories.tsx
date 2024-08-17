@@ -3,10 +3,15 @@ import { Meta, StoryFn } from "@storybook/react";
 import PaginationControls from "./PaginationControls";
 import { PaginationControlsProps } from "./PaginationControls";
 
-export default {
-  title: "UI/molecules/PaginationControls",
+// export default {
+//   title: "UI/molecules/PaginationControls",
+//   component: PaginationControls,
+// } as Meta;
+
+const meta: Meta<typeof PaginationControls> = {
   component: PaginationControls,
-} as Meta;
+};
+export default meta;
 
 const Template: StoryFn<PaginationControlsProps> = (args) => (
   <PaginationControls {...args} />

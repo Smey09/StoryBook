@@ -18,12 +18,13 @@ export const Default = Template.bind({});
 Default.args = {
   product: {
     id: "1",
-    name: "Sample Product",
+    name: "Simple Product",
     model: "XYZ123",
     brand: "Sample Brand",
     price: 99.99,
     description: "This is a sample product description.",
     about: "Details about the product.",
-    image: "https://via.placeholder.com/150",
+    image:
+      "https://fdn.gsmarena.com/imgroot/news/23/09/apple-iphone-15-pro-what-to-expect/-822/gsmarena_001.jpg",
   },
 };

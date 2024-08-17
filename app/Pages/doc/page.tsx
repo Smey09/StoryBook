@@ -5,7 +5,6 @@ import NevBar from "../NevBar";
 import Footer from "../Footer";
 import CartProduct from "@/app/components/CardProduct";
 import { LoginForm } from "@/app/components/LoginForm";
-import YukForm from "@/app/components/SingUpForm";
 
 const mockProducts = [
   {
@@ -58,10 +57,6 @@ const Doc = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <h1>Sign UP Form</h1>
-        <YukForm />
       </div>
     </div>
   );

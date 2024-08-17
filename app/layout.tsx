@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NevBar />
-        <div className="p-10 min-h-[calc(100vh-66px-52px)]">{children}</div>
+        <div className="p-3 min-h-[calc(100vh-66px-52px)]">{children}</div>
         <Footer />
       </body>
     </html>

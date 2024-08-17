@@ -2,10 +2,15 @@ import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import PaginationButton, { PaginationButtonProps } from "./PaginationButton";
 
-export default {
-  title: "UI/atoms/PaginationButton",
+// export default {
+//   title: "UI/atoms/PaginationButton",
+//   component: PaginationButton,
+// } as Meta;
+
+const meta: Meta<typeof PaginationButton> = {
   component: PaginationButton,
-} as Meta;
+};
+export default meta;
 
 const Template: StoryFn<PaginationButtonProps> = (args) => (
   <PaginationButton {...args} />

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import ButtonGradient from "@/app/components/Atomic/ButtonGradient";
 
 const HomePage = () => {
   const router = useRouter();
@@ -16,7 +17,7 @@ const HomePage = () => {
   const getMoviesTMDBClient = `${My_URL}/screen/movies`;
   const getMoviesAmazonproClient = `${My_URL}/screen/amazonpro`;
 
-  const learnUI_1 = `${My_URL}/screen/learnUI`;
+  const learnUI_1 = `${My_URL}/screen/products/animation`;
   const getAllProducts = `${My_URL}/screen/products`;
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -31,8 +32,12 @@ const HomePage = () => {
     }
   };
 
+  const handleToDashBoard = () => {
+    router.push("/Pages/dashboard");
+  };
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center space-x-10">
+      <ButtonGradient text="DashBoard" onClick={handleToDashBoard} />
       <div className="bg-gray-200 p-6 rounded-lg shadow-lg w-96">
         <h1 className="text-3xl font-bold text-center mb-6">Home Page</h1>
         <div className="space-y-4">
