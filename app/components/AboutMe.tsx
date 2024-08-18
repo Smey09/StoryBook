@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen ">
       <div className="dark:bg-gray-800 w-full max-w-4xl p-4 rounded-lg flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 border border-red-400 bg-white">
         <img
           className="w-32 h-32 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full shadow-lg"

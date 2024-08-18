@@ -21,7 +21,7 @@ const PhoneCard: React.FC<PhoneCardProps> = ({
   description,
 }) => {
   const truncatedDescription = truncateText(description, 50);
-  const truncatedTitle = truncateText(title, 40);
+  const truncatedTitle = truncateText(title, 35);
 
   return (
     <div className="flex flex-col sm:flex-row py-2 sm:py-1 items-center bg-gray-200 rounded-sm border border-red-300 hover:bg-gray-300 transform transition-transform duration-300 ease-in-out hover:scale-105">

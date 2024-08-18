@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NevBar from "./Pages/NevBar";
 import Footer from "./Pages/Footer";
+import { BackgroundGradientAnimation } from "./components/Atomic/Bg-animations";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NevBar />
-        <div className="p-3 min-h-[calc(100vh-66px-52px)]">{children}</div>
+        <div className="p-1 min-h-[calc(100vh-66px-52px)]">{children}</div>
         <Footer />
       </body>
     </html>
