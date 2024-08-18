@@ -61,7 +61,7 @@ const Page: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4 bg-white">
-      <h1 className="text-2xl font-bold mb-4">Products</h1>
+      <h1 className="text-2xl font-bold mb-4">Products Pupulor</h1>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

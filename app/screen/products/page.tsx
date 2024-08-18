@@ -51,8 +51,8 @@ const ProductsPage = () => {
   const handlePhoneButtonClick = () => {
     router.push("/screen/products/phones");
   };
-  const handleanimationsButtonClick = () => {
-    router.push("/screen/products/animation");
+  const handlepupulorButtonClick = () => {
+    router.push("/screen/products/pupulor");
   };
 
   return (
@@ -61,10 +61,7 @@ const ProductsPage = () => {
         <h1>Products</h1>
         <div className="w-[100%] flex items-center justify-start mx-5 space-x-2">
           <ButtonGradient text="Phone" onClick={handlePhoneButtonClick} />
-          <ButtonGradient
-            text="animations"
-            onClick={handleanimationsButtonClick}
-          />
+          <ButtonGradient text="pupulors" onClick={handlepupulorButtonClick} />
         </div>
       </div>
       <div className="container mx-auto p-4 bg-white border border-blue-300">

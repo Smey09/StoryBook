@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 
 interface Product {
-  id: number; // ID is a number
+  id: number;
   name: string;
   image: string;
   model: string;
@@ -15,7 +15,7 @@ interface Product {
   about: string;
 }
 
-const LearnUIDetail: React.FC = () => {
+const PupulorProduct: React.FC = () => {
   const params = useParams();
   const id = params.id as string; // Extract id as string
   const [detail, setDetail] = useState<Product | null>(null);
@@ -113,4 +113,4 @@ const LearnUIDetail: React.FC = () => {
   );
 };
 
-export default LearnUIDetail;
+export default PupulorProduct;
