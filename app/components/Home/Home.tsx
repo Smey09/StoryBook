@@ -44,7 +44,7 @@ const Home = () => {
       <div className="bg-gray-600 text-3xl text-gray-100 font-bold text-center mb-3 py-2 rounded-xl">
         Home Page
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="overflow-auto max-h-[calc(100vh-8rem)] px-2 py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <CardSelections
           id="client-select"
           title="Client Component"
