@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -22,13 +23,17 @@ const page = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-6">Our Partners</h2>
           <div className="flex justify-center space-x-8">
-            <img
+            <Image
               src="/path-to-cellcard-logo.png"
               alt="Cellcard"
               className="h-12"
             />
-            <img src="/path-to-ezecom-logo.png" alt="EZECOM" className="h-12" />
-            <img
+            <Image
+              src="/path-to-ezecom-logo.png"
+              alt="EZECOM"
+              className="h-12"
+            />
+            <Image
               src="/path-to-wingbank-logo.png"
               alt="Wing Bank"
               className="h-12"
@@ -45,14 +50,14 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="testimonial">
               <p className="text-lg">
-                "The bootcamp transformed my career. I landed a job within a
-                month!"
+                The bootcamp transformed my career. I landed a job within a
+                month!
               </p>
               <p className="text-sm text-gray-600 mt-2">- Bootcamp Graduate</p>
             </div>
             <div className="testimonial">
               <p className="text-lg">
-                "Our partnership with SabaiCode has been incredibly beneficial."
+                Our partnership with SabaiCode has been incredibly beneficial.
               </p>
               <p className="text-sm text-gray-600 mt-2">
                 - Partner Organization
@@ -90,12 +95,12 @@ const page = () => {
             Our Programs in Action
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <img
+            <Image
               src="/path-to-photo1.jpg"
               alt="Bootcamp Session"
               className="w-full h-auto"
             />
-            <img
+            <Image
               src="/path-to-photo2.jpg"
               alt="Bootcamp Session"
               className="w-full h-auto"

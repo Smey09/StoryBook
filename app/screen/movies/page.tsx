@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState } from "react";
 import {
@@ -59,8 +60,8 @@ const MovieTMDB: React.FC = () => {
       {/* Display video information in a card */}
       {firstVideo && (
         <div className="mb-4 p-2 rounded transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-200">
-          <img
-            src={`https://img.youtube.com/vi/${firstVideo.key}/hqdefault.jpg`}
+          <Image
+            src={`https://Image.youtube.com/vi/${firstVideo.key}/hqdefault.jpg`}
             alt={firstVideo.name}
             className="w-full h-64 object-cover"
           />
@@ -86,7 +87,7 @@ const MovieTMDB: React.FC = () => {
               key={movie.id}
               className="bg-white shadow-md rounded-lg overflow-hidden hover:bg-gray-200 transition"
             >
-              <img
+              <Image
                 src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
                 alt={movie.title}
                 className="w-full h-64 object-cover"

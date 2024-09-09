@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { fetchPaginatedMovies } from "@/app/api/Amazonpro/amazonpro";
 import { useState, useEffect } from "react";
@@ -53,7 +54,7 @@ const MoviesPage: React.FC = () => {
       {movieDetails && (
         <div className="mb-6">
           <h2 className="text-xl font-semibold">Featured Phone</h2>
-          <img
+          <Image
             src={movieDetails.image}
             alt={movieDetails.title}
             className="w-full h-64 object-cover"
@@ -72,7 +73,7 @@ const MoviesPage: React.FC = () => {
             key={data._id}
             className="bg-white shadow-md rounded-lg overflow-hidden hover:bg-gray-200 transition"
           >
-            <img
+            <Image
               src={data.image}
               alt={data.title}
               className="w-full h-64 object-cover"

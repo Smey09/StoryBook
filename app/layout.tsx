@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NevBar from "./Pages/NevBar";
 import Footer from "./Pages/Footer";
-import { BackgroundGradientAnimation } from "./components/Atomic/Bg-animations";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NevBar />
-        <div className="p-1 min-h-[calc(100vh-66px-52px)]">{children}</div>
+        <div className="p-1 min-h-[calc(100vh-66px-52px)]">
+          {children}
+          <Analytics />
+        </div>
         <Footer />
       </body>
     </html>
